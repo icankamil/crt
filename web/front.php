@@ -30,3 +30,6 @@ $framework = new HttpKernel\HttpCache\HttpCache(
 $response = $framework->handle($request);
 
 $response->send();
+
+// ============== For installation only ============
+// symlink("/home/sinovatif/public_html/goals/src/assets", "/home/sinovatif/public_html/goals/web/assets");
