@@ -1,0 +1,24 @@
+{
+    "require": {
+        "symfony/http-foundation": "^5.2",
+        "symfony/routing": "^5.2",
+        "symfony/http-kernel": "^5.2",
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/validator": "^5.3",
+        "doctrine/annotations": "^1.13",
+        "siriusphp/validation": "^3.0",
+        "symfony/mime": "^5.4",
+        "phpmailer/phpmailer": "^6.5"
+    },
+	"autoload": {
+        "files": [
+            "src/Core/Functions/helpers.php",
+            "src/Core/Classes/helpers.php"
+        ],
+		"psr-4": {
+            "": "src/",
+            "App\\": "src/app/",
+            "Config\\": "config/"
+        }
+	}
+}
