@@ -22,12 +22,9 @@ $routes->prefix('example', function ($routes) {
 });
 /* -------------------------------------------------------------------------- */
 
-
 /* -------------------------- Route Without Prefix -------------------------- */
 $routes->push('example', '/example', [ExampleController::class, 'index']);
 /* -------------------------------------------------------------------------- */
-
-
 
 /* ------------------------------- Maintenance ------------------------------ */
 $routes->push('maintenance', '/maintenance', [MaintenanceController::class, 'index']);
